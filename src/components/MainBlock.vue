@@ -7,7 +7,7 @@
         </div>
         <div class="main__content">
             <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna amet penatibus.
+                Сотрясаем улицы и дворы Москвы с 2007 года!
             </span>
             <button>
                 <span>
@@ -74,7 +74,7 @@ span {
     font-size: 40px;
     font-weight: 500;
     line-height: 48px;
-    width: 437px;
+    max-width: 437px;
     margin: 41px auto 40px auto
 }
 p, h1, h6{
@@ -151,4 +151,7 @@ button span {
 .main__contacts div span p {
     line-height: 33px;
 }
+
+/** медиазапросы */
+
 </style>

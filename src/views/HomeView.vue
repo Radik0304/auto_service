@@ -1,17 +1,19 @@
 <template>
   <div class="home__container">
     <MainBlocK/>
+    <AchievementsBlock/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import MainBlocK from '@/components/MainBlock.vue'
+import AchievementsBlock from '@/components/AchievementsBlock.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    MainBlocK
+    MainBlocK,
+    AchievementsBlock
   }
 }
 </script>
