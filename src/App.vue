@@ -9,18 +9,16 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
-nav {
-  padding: 30px;
-}
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: #141414;
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>

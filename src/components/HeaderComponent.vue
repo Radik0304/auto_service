@@ -23,8 +23,8 @@ export default {
   font-family: ReformaGroteskMediumC;
   font-size: 24px;
   line-height: 29px;
-
-  margin: 0 auto;
+  margin: auto;
+  padding-top: 24px;
   width: 70%;
 }
 
@@ -36,12 +36,12 @@ export default {
 
 a{
   /* color: #fff; */
-  color: black;
+  color: #fff;
   text-decoration: none;
 }
 .header__burger{
   border:none;
-  width: 50px;
+  width: 40px;
   height: 25px;
   background-color: rgba(0,0,0,0);
   background-image: url("../assets/burger_icon.png");
