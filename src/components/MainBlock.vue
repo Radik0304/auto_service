@@ -7,7 +7,7 @@
         </div>
         <div class="main__content">
             <span>
-                Сотрясаем улицы и дворы Москвы с 2007 года!
+                Профессиональный автозвук от колонки до стереосистемы!
             </span>
             <button>
                 <span>
@@ -116,6 +116,12 @@ button span {
     flex-direction: column;
     align-items: center;
     margin-bottom: 103px;
+}
+
+@media screen and (max-width: 600px) {
+    .main__content{
+    margin-bottom: 50px;
+}
 }
 
 .main__contacts{

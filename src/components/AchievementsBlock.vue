@@ -1,7 +1,7 @@
 <template>
     <div class="achievements__container">
         <div class="achievements__info">
-            <h3>Наши достижения от кубка россии до чемпионатов мира</h3>
+            <h2>Наши достижения от кубка россии до чемпионатов мира</h2>
             <img src="../assets/main-header-border.png" alt="header-border">
             <span>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant tincidunt aliquam tincidunt pretium
@@ -13,27 +13,46 @@
         </div>
         <div class="achievements__descriptions">
             <div class="achievements__descriptions_first-block">
-                 <!-- Переписать потом с v-for -->
+                <!-- Переписать потом с v-for -->
                 <ul>
                     <li class="achievements__descriptions-info">
-                        <img src="../assets/1.png" alt="number-one">
+                        <h3>#1</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui </span>
                     </li>
-                    <li>
-                        <img src="../assets/6.png" alt="number-six">
+                    <li class="achievements__descriptions-info">
+                        <h3>#6</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui </span>
                     </li>
-                    <li>
-                        <img src="../assets/2.png" alt="number-two">
+                    <li class="achievements__descriptions-info">
+                        <h3>#2</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui </span>
                     </li>
-                    <li>
-                        <img src="../assets/1.png" alt="number-one">
+                    <li class="achievements__descriptions-info">
+                        <h3>#1</h3>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui </span>
                     </li>
                 </ul>
             </div>
-            <div class="achievements__descriptions_second-block"></div>
+            <div class="achievements__descriptions_second-block">
+                <ul>
+                    <li class="achievements__descriptions-info">
+                        <h3>#4</h3>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui </span>
+                    </li>
+                    <li class="achievements__descriptions-info">
+                        <h3>#3</h3>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui </span>
+                    </li>
+                    <li class="achievements__descriptions-info">
+                        <h3>#1</h3>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui </span>
+                    </li>
+                    <li class="achievements__descriptions-info">
+                        <img src="../assets/cup.png" alt="">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui </span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -45,42 +64,124 @@ export default {
 </script>
 
 <style scoped>
-/** обнуляем стандарные стили */
-h3{
-    margin: 0;
-}
-.achievements__container{
+.achievements__container {
     display: flex;
-    align-items: center;
     justify-content: center;
+    margin-top: 180px;
 }
+
+@media screen and (max-width:600px) {
+    .achievements__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievements__info {
+        margin-right: 0 !important;
+        align-items: center !important;
+        ;
+    }
+
+    .achievements__info h2,
+    .achievements__info span {
+        text-align: center !important;
+    }
+
+    .achievements__container {
+        margin-top: 50px;
+    }
+
+    .achievements__info img{
+    margin: 20px 0 30px 0!important;
+}
+
 .achievements__descriptions{
-    width: 30%;
+    margin-top: 50px;
 }
-.achievements__info{
+}
+
+.achievements__descriptions {
+    display: flex;
+    width: 40%;
+}
+
+.achievements__info {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 24px;
+}
+
+.achievements__descriptions-info {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: ReformaGroteskDemiC;
+    border: 1px solid #898989;
 }
-.achievements__descriptions-info{
-    display: flex;
-    flex-direction: column;
+
+.achievements__descriptions-info span {
+    margin-top: 22px;
 }
+
+.achievements__descriptions_second-block {
+    margin-top: 40px;
+}
+
+.achievements__descriptions-info img {
+    width: 37px;
+    height: 45px;
+}
+
 .achievements__info span {
     font-family: ReformaGroteskMediumC;
     font-size: 24px;
     font-weight: 500;
     color: #fff;
+    text-align: start;
 }
-img{
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    height: 177px;
+    max-width: 318px;
+}
+
+.achievements__info img {
     width: 146px;
     height: 14px;
+    margin: 40px 0 60px 0;
 }
-h3 {
-    font-family: ReformaGroteskDemiC;
+
+h2 {
     font-size: 52px;
     font-weight: 600;
     color: #fff;
     text-transform: uppercase;
 }
-</style>
+
+h2 {
+    text-align: start;
+}
+
+h2,
+h3 {
+    font-family: ReformaGroteskDemiC;
+    margin: 0;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #DB3138;
+}</style>
